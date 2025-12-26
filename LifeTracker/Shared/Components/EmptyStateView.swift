@@ -1,0 +1,36 @@
+import SwiftUI
+
+struct EmptyStateView: View {
+    let icon: String
+    let title: String
+    let message: String
+    var buttonTitle: String?
+    var action: (() -> Void)?
+
+    var body: some View {
+        ContentUnavailableView {
+            Label(title, systemImage: icon)
+        } description: {
+            Text(message)
+        } actions: {
+            if let buttonTitle, let action {
+                Button(action: action) {
+                    Text(buttonTitle)
+                        .fontWeight(.medium)
+                }
+                .buttonStyle(.borderedProminent)
+            }
+        }
+    }
+}
+
+#Preview {
+    EmptyStateView(
+        icon: "doc.fill",
+        title: "No Documents",
+        message: "Start by scanning or uploading your first document",
+        buttonTitle: "Add Document"
+    ) {
+        print("Add document tapped")
+    }
+}
