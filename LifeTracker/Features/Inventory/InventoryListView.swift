@@ -9,6 +9,8 @@ struct InventoryListView: View {
     @State private var selectedCategory: ItemCategory?
     @State private var showingAddItem = false
     @State private var showingScanner = false
+    @State private var scannedBarcode: String?
+    @State private var showingScannedItemSheet = false
 
     var body: some View {
         NavigationStack {
@@ -75,6 +77,20 @@ struct InventoryListView: View {
             .sheet(isPresented: $showingAddItem) {
                 AddInventoryItemView()
             }
+            .fullScreenCover(isPresented: $showingScanner) {
+                BarcodeScannerView(scannedCode: $scannedBarcode)
+                    .ignoresSafeArea()
+            }
+            .sheet(isPresented: $showingScannedItemSheet) {
+                if let barcode = scannedBarcode {
+                    ScannedItemSheet(barcode: barcode)
+                }
+            }
+            .onChange(of: scannedBarcode) { _, newValue in
+                if newValue != nil {
+                    showingScannedItemSheet = true
+                }
+            }
         }
     }
 
@@ -110,7 +126,9 @@ struct InventoryListView: View {
             ForEach(groupedItems.keys.sorted(by: { $0.rawValue < $1.rawValue }), id: \.self) { category in
                 Section {
                     ForEach(groupedItems[category] ?? []) { item in
-                        InventoryItemRow(item: item)
+                        NavigationLink(destination: InventoryDetailView(item: item)) {
+                            InventoryItemRow(item: item)
+                        }
                     }
                     .onDelete { offsets in
                         deleteItems(in: category, at: offsets)

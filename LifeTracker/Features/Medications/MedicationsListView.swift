@@ -71,7 +71,9 @@ struct MedicationsListView: View {
             // All Medications Section
             Section {
                 ForEach(filteredMedications) { medication in
-                    MedicationRowView(medication: medication)
+                    NavigationLink(destination: MedicationDetailView(medication: medication)) {
+                        MedicationRowView(medication: medication)
+                    }
                 }
                 .onDelete(perform: deleteMedications)
             } header: {
@@ -306,6 +308,12 @@ struct AddMedicationView: View {
             colorName: selectedColor
         )
         modelContext.insert(medication)
+
+        // Schedule notifications
+        Task {
+            await NotificationService.shared.scheduleMedicationReminders(for: medication)
+        }
+
         dismiss()
     }
 }

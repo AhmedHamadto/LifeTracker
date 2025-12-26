@@ -78,11 +78,16 @@ struct DocumentsListView: View {
     private var documentsList: some View {
         List {
             ForEach(filteredDocuments) { document in
-                DocumentRowView(document: document)
+                NavigationLink(destination: DocumentDetailView(document: document)) {
+                    DocumentRowView(document: document)
+                }
             }
             .onDelete(perform: deleteDocuments)
         }
         .listStyle(.plain)
+        .sheet(isPresented: $showingScanner) {
+            DocumentScannerSheet()
+        }
     }
 
     private var filteredDocuments: [Document] {

@@ -1,9 +1,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @State private var selectedTab: Tab = .dashboard
 
     var body: some View {
+        if hasCompletedOnboarding {
+            mainTabView
+        } else {
+            OnboardingView()
+        }
+    }
+
+    private var mainTabView: some View {
         TabView(selection: $selectedTab) {
             DashboardView()
                 .tabItem {
@@ -19,7 +28,7 @@ struct ContentView: View {
 
             MedicationsListView()
                 .tabItem {
-                    Label("Medications", systemImage: "pills.fill")
+                    Label("Meds", systemImage: "pills.fill")
                 }
                 .tag(Tab.medications)
 

@@ -124,7 +124,9 @@ struct WorkoutsListView: View {
 
             // Workouts
             ForEach(workouts) { workout in
-                WorkoutRowView(workout: workout)
+                NavigationLink(destination: WorkoutDetailView(workout: workout)) {
+                    WorkoutRowView(workout: workout)
+                }
             }
             .onDelete(perform: deleteWorkouts)
         }
@@ -239,12 +241,17 @@ struct MeasurementsListView: View {
                 }
             }
         }
+        .sheet(isPresented: $showingAddMeasurement) {
+            AddMeasurementView()
+        }
     }
 
     private var measurementsList: some View {
         List {
             ForEach(measurements) { measurement in
-                MeasurementRowView(measurement: measurement)
+                NavigationLink(destination: MeasurementDetailView(measurement: measurement)) {
+                    MeasurementRowView(measurement: measurement)
+                }
             }
             .onDelete(perform: deleteMeasurements)
         }
