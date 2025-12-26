@@ -5,6 +5,10 @@ import SwiftData
 struct LifeTrackerApp: App {
     let modelContainer: ModelContainer
 
+    private static var isRunningTests: Bool {
+        ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+    }
+
     init() {
         do {
             let schema = Schema([
@@ -19,11 +23,21 @@ struct LifeTrackerApp: App {
                 BodyMeasurement.self
             ])
 
-            let modelConfiguration = ModelConfiguration(
-                schema: schema,
-                isStoredInMemoryOnly: false,
-                cloudKitDatabase: .automatic
-            )
+            let modelConfiguration: ModelConfiguration
+            if Self.isRunningTests {
+                // Use in-memory storage without CloudKit for testing
+                modelConfiguration = ModelConfiguration(
+                    schema: schema,
+                    isStoredInMemoryOnly: true,
+                    cloudKitDatabase: .none
+                )
+            } else {
+                modelConfiguration = ModelConfiguration(
+                    schema: schema,
+                    isStoredInMemoryOnly: false,
+                    cloudKitDatabase: .automatic
+                )
+            }
 
             modelContainer = try ModelContainer(
                 for: schema,

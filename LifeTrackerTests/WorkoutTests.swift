@@ -8,7 +8,7 @@ final class WorkoutTests: XCTestCase {
 
     override func setUpWithError() throws {
         let schema = Schema([Workout.self, Exercise.self, ExerciseSet.self])
-        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let config = ModelConfiguration(isStoredInMemoryOnly: true, cloudKitDatabase: .none)
         container = try ModelContainer(for: schema, configurations: [config])
         context = ModelContext(container)
     }
