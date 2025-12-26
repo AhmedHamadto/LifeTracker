@@ -49,7 +49,10 @@
 
 ## Phase 6: Polish & Advanced Features 🚧
 - [x] Refine Dashboard with personalized insights
-- [ ] Add iOS Widgets (small, medium, large)
+- [x] Add iOS Widgets (small, medium, large)
+  - [x] Medications widget (next dose, today's schedule, progress)
+  - [x] Workouts widget (weekly summary, streak, recent workouts)
+  - [x] Lock screen widgets (accessory circular & rectangular)
 - [ ] Implement Siri Shortcuts
 - [x] Create onboarding flow
 - [x] Add export/backup functionality
@@ -85,7 +88,14 @@
 
 ## Version History
 
-### v0.2.0 (Current)
+### v0.3.0 (Current)
+- iOS Widgets for Medications and Workouts
+  - Small, Medium, Large sizes
+  - Lock screen widgets
+  - Shared data provider via App Groups
+- Widget data service for app-to-widget communication
+
+### v0.2.0
 - Complete document scanning with VisionKit and OCR
 - Full medication tracking with notifications
 - Barcode scanning with product lookup
