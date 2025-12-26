@@ -39,6 +39,11 @@ A comprehensive iOS app for organizing your entire life - medical documents, med
 - Progress photos with comparison
 - Apple Health sync
 - Personal records tracking
+- Progress visualization with Swift Charts
+  - Weight trends with goal tracking
+  - Body fat percentage with category zones
+  - Body measurements over time
+  - Workout statistics (frequency, duration, volume)
 
 ## Tech Stack
 
@@ -47,6 +52,7 @@ A comprehensive iOS app for organizing your entire life - medical documents, med
 - **AI/ML**: Apple Vision framework (on-device OCR)
 - **Scanning**: VisionKit, AVFoundation
 - **Health**: HealthKit integration
+- **Charts**: Swift Charts for progress visualization
 - **Notifications**: UserNotifications framework
 
 ## Requirements
@@ -119,11 +125,11 @@ LifeTracker is designed with privacy in mind:
 See [TODO.md](TODO.md) for the complete development roadmap.
 
 ### Upcoming Features
-- iOS Widgets
 - Siri Shortcuts
 - Apple Watch app
 - iPad optimization
 - Receipt auto-categorization with ML
+- Personal records tracking
 
 ## Contributing
 

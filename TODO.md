@@ -41,7 +41,12 @@
 - [x] Complete workout logging with exercises/sets
 - [x] Implement body measurements tracking
 - [x] Add HealthKit sync (read/write)
-- [ ] Build progress visualization with charts
+- [x] Build progress visualization with charts
+  - Weight progress chart with trend line and goal tracking
+  - Body fat percentage chart with category zones
+  - Body measurements chart (chest, waist, hips, etc.)
+  - Workout statistics chart (frequency, duration, volume)
+  - Summary stats with time range filtering
 - [ ] Create personal records tracking
 - [x] Add progress photo comparison
 - [ ] Implement workout templates
@@ -108,7 +113,16 @@
 
 ## Version History
 
-### v0.4.0 (Current)
+### v0.5.0 (Current)
+- Progress visualization with Swift Charts
+  - Weight progress chart with trend line and goal tracking
+  - Body fat percentage chart with category zones
+  - Body measurements chart (multi-line for chest, waist, hips, etc.)
+  - Workout statistics chart (frequency, duration, volume)
+  - Integrated summary stats with time range filtering (Week, Month, 3 Months, Year)
+- Charts integrated into Health module Progress tab
+
+### v0.4.0
 - Comprehensive test suite (95 total tests)
   - 63 unit tests for all models
   - 32 UI tests for navigation and flows
