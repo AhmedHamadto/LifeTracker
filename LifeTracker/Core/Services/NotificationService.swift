@@ -34,7 +34,7 @@ class NotificationService: ObservableObject {
     // MARK: - Medication Reminders
 
     func scheduleMedicationReminders(for medication: Medication) async {
-        guard isAuthorized else {
+        if !isAuthorized {
             _ = await requestAuthorization()
             guard isAuthorized else { return }
         }

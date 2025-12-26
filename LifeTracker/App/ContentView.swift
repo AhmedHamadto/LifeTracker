@@ -4,8 +4,12 @@ struct ContentView: View {
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @State private var selectedTab: Tab = .dashboard
 
+    private var isUITesting: Bool {
+        ProcessInfo.processInfo.arguments.contains("UI_TESTING")
+    }
+
     var body: some View {
-        if hasCompletedOnboarding {
+        if hasCompletedOnboarding || isUITesting {
             mainTabView
         } else {
             OnboardingView()

@@ -73,13 +73,33 @@
 - [ ] Integration with pharmacies for refills
 
 ## Technical Debt & Improvements
-- [ ] Add unit tests for models
-- [ ] Add UI tests for critical flows
-- [ ] Implement proper error handling
+- [x] Add unit tests for models (63 tests)
+  - DocumentTests (12 tests)
+  - MedicationTests (14 tests)
+  - InventoryItemTests (14 tests)
+  - WorkoutTests (14 tests)
+  - BodyMeasurementTests (9 tests)
+- [x] Add UI tests for critical flows (32 tests)
+  - Tab navigation tests
+  - Module navigation tests
+  - Settings access tests
+- [x] Implement proper error handling
+  - AppError enum with 25+ error types
+  - ErrorHandling utilities with Result types
+  - Error alert modifiers and banner views
+  - Validation helpers
+- [x] Implement proper logging
+  - LoggingService with multi-level logging (debug, info, warning, error, critical)
+  - Category-based logging (app, data, network, sync, health, etc.)
+  - Performance logging with PerformanceLogger
+  - Log history and export capabilities
+- [x] Add offline-first improvements
+  - NetworkMonitor for connectivity status
+  - SyncManager for CloudKit sync coordination
+  - CacheService for in-memory and disk caching
+  - Conflict resolution for data syncing
 - [ ] Add analytics (privacy-focused)
 - [ ] Optimize CloudKit sync performance
-- [ ] Add offline-first improvements
-- [ ] Implement proper logging
 
 ## Known Issues
 - None yet (new project)
@@ -88,7 +108,19 @@
 
 ## Version History
 
-### v0.3.0 (Current)
+### v0.4.0 (Current)
+- Comprehensive test suite (95 total tests)
+  - 63 unit tests for all models
+  - 32 UI tests for navigation and flows
+- Error handling system with AppError enum
+- Logging service with categorized logging
+- Offline-first improvements
+  - Network monitoring
+  - Sync management
+  - Data caching
+- Xcode project configuration with XcodeGen
+
+### v0.3.0
 - iOS Widgets for Medications and Workouts
   - Small, Medium, Large sizes
   - Lock screen widgets

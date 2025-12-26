@@ -178,11 +178,11 @@ struct DocumentScannerSheet: View {
 
             do {
                 let text = try await VisionService.shared.extractText(from: imageDataArray)
+                let detectedCategory = await VisionService.shared.detectDocumentCategory(from: text)
                 await MainActor.run {
                     extractedText = text
 
                     // Auto-detect category
-                    let detectedCategory = VisionService.shared.detectDocumentCategory(from: text)
                     category = detectedCategory
 
                     // Generate title suggestion

@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017E0346256A0EDE2565626A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32829E71B59502B29B8A6822 /* Constants.swift */; };
+		073C202784F1F1FDCF528830 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E35C5BE51D63A0103935C0 /* Theme.swift */; };
+		07EA71FDDAF93AF96EA1FE72 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FB857DBD851364F4D97950 /* CacheService.swift */; };
+		0D9250256D81A143EAB86AE7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F55AF4EEE90F372A3F239E /* AppError.swift */; };
+		130D549B093688F4D8662A70 /* LifeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13547969CDB4D1AEB754E1B /* LifeTrackerUITests.swift */; };
+		1331F7E54CFF71EFB9F66000 /* MedicationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73DDE4A3B36842870928EB /* MedicationsUITests.swift */; };
+		15EB95E76643FEE169E1A79C /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C3F52F97A8B32F079582C9 /* Exercise.swift */; };
+		1A7DBC068287ED8DD3998A63 /* BarcodeLookupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BF1C7802C3143FF9143A17 /* BarcodeLookupService.swift */; };
+		1C75E78F3561ABF95956779D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F225F7265E5E20DEE80526F /* NotificationService.swift */; };
+		2006075983C79A6B5D13BA6B /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A639B9F551EABB787A4BA6A /* WorkoutDetailView.swift */; };
+		21AE77D134900E07DCE76EF9 /* LifeTrackerWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED25F3DA235BA18B3170CDD /* LifeTrackerWidgetsBundle.swift */; };
+		25B2A09D8ACAA2B4E9555137 /* WidgetDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145270DED29F90CB102F2C90 /* WidgetDataLoader.swift */; };
+		25B8EF705495E685F745C7B7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EBA5B20071C5CDDDAB4B7 /* View+Extensions.swift */; };
+		2E44B347D4234D91CCBC6F67 /* DocumentScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B060B8C62BBDC264CEA4EF88 /* DocumentScannerView.swift */; };
+		31DF3E386F4EBBB6D2FE774B /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6D98632B1DCA650CA6296 /* InventoryListView.swift */; };
+		332523EC11000F623C0D07F7 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFDBAABE757D4F01836066 /* Folder.swift */; };
+		36734B507B383170B54AA610 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DA261C61A5BD4CA260D31 /* Document.swift */; };
+		368ED662290E5844129114FB /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E466DABED1F45D890DD0DFD /* LoggingService.swift */; };
+		36D9F0382A9335297611F8BC /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864976AF270F248217949F /* VisionService.swift */; };
+		4D58EC2EBFBC9FC7BFBCC91F /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653419365319590B1C51935 /* StatCard.swift */; };
+		4EA9A932D8566002193F059B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0927B54A00E4B5A545C5A7A7 /* Date+Extensions.swift */; };
+		56F61A578CB78A8D9F93781A /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71411F051D8520F43D45134 /* Medication.swift */; };
+		5C453286AB7D0F33287E172A /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDD7F56DF84B139DDD219C /* Workout.swift */; };
+		621AB16ED063427E42C04FA2 /* DocumentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29812EE8674C23AABC01164F /* DocumentsUITests.swift */; };
+		634EF54CA3316048DA0F0149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FCBEA256A59C8170565DD /* ContentView.swift */; };
+		6889327A1D9E1773252D6118 /* DocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1658EADED6F94330E698BAA /* DocumentTests.swift */; };
+		7E1A835DAA81342019109750 /* WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2171BBF85154A6B911B435 /* WorkoutTests.swift */; };
+		7E8299727E4C91419C35ADF2 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3530026B12E9251A98D3BD0 /* DashboardView.swift */; };
+		8122719CAD4F285067AC1C0D /* InventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85A413EB992DAF693A1533 /* InventoryUITests.swift */; };
+		81472AF8DE9C84AF84D998F5 /* AddMeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DD700340121A5B59B9749B /* AddMeasurementView.swift */; };
+		8556EE5F21E1E74CCDE1036D /* BodyMeasurementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41E23259503E85E363F084 /* BodyMeasurementTests.swift */; };
+		8974358C4D91C3886BA4A9F5 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D03B1BABB08B397F6CED99 /* SyncManager.swift */; };
+		95F513BD28E7851627EFA286 /* MedicationsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06A7B6EE739D94A662C639 /* MedicationsWidget.swift */; };
+		9E534FA4668F6266950B0873 /* MedicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98802AC5DA89FD7DFCBF3773 /* MedicationLog.swift */; };
+		9F06F6280AE5DE4B554BDD37 /* MedicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB4BDFBE1AFBA6CEBE2B87 /* MedicationTests.swift */; };
+		A2E3303847F0973A3B9FFC24 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF2F41F61F96C792E85FA2 /* HealthKitService.swift */; };
+		AA9C4FA8AAD4A04658FAA63E /* LifeTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090152FB05D3E75A7896D0DE /* LifeTrackerApp.swift */; };
+		AC971F34F8B82F379745AF89 /* InventoryItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBA9FC169838CC418E1CBF /* InventoryItemTests.swift */; };
+		AD135CC66CE08AE67AD3BDF4 /* MedicationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF19982DCC18A175A8355C /* MedicationsListView.swift */; };
+		B2FA417C7A129BA04ADE9DA4 /* InventoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96923B8B8B4DD93B73081C /* InventoryDetailView.swift */; };
+		B36C58F5CAF4E4F8BEE8FACA /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016404DA9E02936A689F1B9A /* InventoryItem.swift */; };
+		B5D5BACEAE64264326FD21CC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF912522FABA96EE094667 /* NetworkMonitor.swift */; };
+		BAA9A2E3F126B5191883C434 /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D59E7048395993CD8C1AE /* QuickActionButton.swift */; };
+		BD5AF9035689F0754D24A5C9 /* DocumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21976DD7D25FE6B111A733 /* DocumentDetailView.swift */; };
+		BE431A83632ACCD61CCE05A3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD188A6888F5DEA579FB66 /* String+Extensions.swift */; };
+		C3AAEB14DCA6994B88FE1973 /* WidgetDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2BA64462D692DB27BFBF47 /* WidgetDataService.swift */; };
+		D7D8C38F6DE18C38C546B2C5 /* WorkoutsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CE52ACD48752172F5A59F /* WorkoutsWidget.swift */; };
+		E0ED1C0FB573056B0415A3F7 /* MedicationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7E857033311DD5DFC410A /* MedicationDetailView.swift */; };
+		E46461476D298A0EBCB56C0F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0894CAC38846A1FF7E5B44 /* OnboardingView.swift */; };
+		E6A7B3240EA23F5B7E1C1634 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A29988F5A74AD2A020F3F3B /* EmptyStateView.swift */; };
+		E7B009D21EFD1BD762CFB526 /* LifeTrackerWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB256B310D054E382FF05243 /* LifeTrackerWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9565CA196C31BE6F28AFCE2 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE859F26DD576B197080DAAC /* ErrorHandling.swift */; };
+		EA27E650A54FC679EE9E34C5 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3423F271E3332288A483B8 /* BarcodeScannerView.swift */; };
+		EC195E8519AC841094E34382 /* BodyMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E172B4F279300F334F4576F /* BodyMeasurement.swift */; };
+		EC6FEBC6BC5D9974992B58E0 /* DocumentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4244A1C80877100F3377F4 /* DocumentsListView.swift */; };
+		F2782DFC213BE85AFD4D138B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D09C2A7D1E234D169AC6BE /* SettingsView.swift */; };
+		F3F79B8E1F916BF894C84B46 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF634C151D999EFA2AC9EC6 /* CardView.swift */; };
+		FA0952A7F0D70766BD15BB03 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA62525AB5473F2AD27C91 /* SectionHeader.swift */; };
+		FB65EE5ACBCCFBF43B47FD86 /* ScannedItemSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F293623D244DAC03D5B120A /* ScannedItemSheet.swift */; };
+		FE02E0D2FB9A90DC688942F3 /* HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA8DAF994323D7163D198F /* HealthUITests.swift */; };
+		FE2FCA067DEF4BB461391E17 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF4D9BA6D2EE1956E98E86 /* HealthView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CC82D200CB570B9E9E0E73B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 947D4850361F5D1D49B780EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B368A992992B04E39622D4AF;
+			remoteInfo = LifeTrackerWidgets;
+		};
+		A93B6806F37198E9D11AA719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 947D4850361F5D1D49B780EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901800E80EBD41BF2A1A3740;
+			remoteInfo = LifeTracker;
+		};
+		C38FCEDE6921A9EF3402B08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 947D4850361F5D1D49B780EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901800E80EBD41BF2A1A3740;
+			remoteInfo = LifeTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAD38D37A21983E76BBE0106 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7B009D21EFD1BD762CFB526 /* LifeTrackerWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		016404DA9E02936A689F1B9A /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		01E35C5BE51D63A0103935C0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		090152FB05D3E75A7896D0DE /* LifeTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTrackerApp.swift; sourceTree = "<group>"; };
+		0927B54A00E4B5A545C5A7A7 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		0C6FCBEA256A59C8170565DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0CF634C151D999EFA2AC9EC6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		145270DED29F90CB102F2C90 /* WidgetDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataLoader.swift; sourceTree = "<group>"; };
+		17CAF10332C81439DE435B40 /* LifeTrackerWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeTrackerWidgets.entitlements; sourceTree = "<group>"; };
+		18EBA9FC169838CC418E1CBF /* InventoryItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemTests.swift; sourceTree = "<group>"; };
+		1BE7E857033311DD5DFC410A /* MedicationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetailView.swift; sourceTree = "<group>"; };
+		1F4244A1C80877100F3377F4 /* DocumentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsListView.swift; sourceTree = "<group>"; };
+		23DD700340121A5B59B9749B /* AddMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasurementView.swift; sourceTree = "<group>"; };
+		26BF1C7802C3143FF9143A17 /* BarcodeLookupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeLookupService.swift; sourceTree = "<group>"; };
+		26CA8DAF994323D7163D198F /* HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUITests.swift; sourceTree = "<group>"; };
+		29812EE8674C23AABC01164F /* DocumentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsUITests.swift; sourceTree = "<group>"; };
+		2A29988F5A74AD2A020F3F3B /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		2B85A413EB992DAF693A1533 /* InventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryUITests.swift; sourceTree = "<group>"; };
+		2D1D59E7048395993CD8C1AE /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionButton.swift; sourceTree = "<group>"; };
+		2F21976DD7D25FE6B111A733 /* DocumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailView.swift; sourceTree = "<group>"; };
+		32829E71B59502B29B8A6822 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		38AD754FA410F3D71AE3D25E /* LifeTrackerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LifeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AFA62525AB5473F2AD27C91 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		3D2171BBF85154A6B911B435 /* WorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTests.swift; sourceTree = "<group>"; };
+		43C3F52F97A8B32F079582C9 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		43FDD8627EF20D77562C7277 /* LifeTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeTracker.entitlements; sourceTree = "<group>"; };
+		4D96923B8B8B4DD93B73081C /* InventoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailView.swift; sourceTree = "<group>"; };
+		4E466DABED1F45D890DD0DFD /* LoggingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingService.swift; sourceTree = "<group>"; };
+		4ED25F3DA235BA18B3170CDD /* LifeTrackerWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTrackerWidgetsBundle.swift; sourceTree = "<group>"; };
+		4F06A7B6EE739D94A662C639 /* MedicationsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsWidget.swift; sourceTree = "<group>"; };
+		4F293623D244DAC03D5B120A /* ScannedItemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedItemSheet.swift; sourceTree = "<group>"; };
+		5C6EBA5B20071C5CDDDAB4B7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		5C73DDE4A3B36842870928EB /* MedicationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsUITests.swift; sourceTree = "<group>"; };
+		5E172B4F279300F334F4576F /* BodyMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasurement.swift; sourceTree = "<group>"; };
+		6A639B9F551EABB787A4BA6A /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		6A864976AF270F248217949F /* VisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
+		7A7DA261C61A5BD4CA260D31 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		7AFF912522FABA96EE094667 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		7BBD188A6888F5DEA579FB66 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7C41E23259503E85E363F084 /* BodyMeasurementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasurementTests.swift; sourceTree = "<group>"; };
+		7F225F7265E5E20DEE80526F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		81AF2F41F61F96C792E85FA2 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		83E6D98632B1DCA650CA6296 /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
+		86DB4BDFBE1AFBA6CEBE2B87 /* MedicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTests.swift; sourceTree = "<group>"; };
+		89D09C2A7D1E234D169AC6BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		94EFDBAABE757D4F01836066 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		98802AC5DA89FD7DFCBF3773 /* MedicationLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationLog.swift; sourceTree = "<group>"; };
+		9B0894CAC38846A1FF7E5B44 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A3530026B12E9251A98D3BD0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A71411F051D8520F43D45134 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		AAC051DFAE2D8EEB49AFB59D /* LifeTracker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LifeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02CE52ACD48752172F5A59F /* WorkoutsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsWidget.swift; sourceTree = "<group>"; };
+		B060B8C62BBDC264CEA4EF88 /* DocumentScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerView.swift; sourceTree = "<group>"; };
+		BAEDD7F56DF84B139DDD219C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		BB256B310D054E382FF05243 /* LifeTrackerWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LifeTrackerWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBF19982DCC18A175A8355C /* MedicationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsListView.swift; sourceTree = "<group>"; };
+		C1658EADED6F94330E698BAA /* DocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTests.swift; sourceTree = "<group>"; };
+		C1D41B0D0D162D2A3D40D885 /* LifeTrackerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LifeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2BA64462D692DB27BFBF47 /* WidgetDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataService.swift; sourceTree = "<group>"; };
+		CE859F26DD576B197080DAAC /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		CEEF4D9BA6D2EE1956E98E86 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		D4D03B1BABB08B397F6CED99 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		D656B52A208861CE5E49A6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E653419365319590B1C51935 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		EF3423F271E3332288A483B8 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		F13547969CDB4D1AEB754E1B /* LifeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeTrackerUITests.swift; sourceTree = "<group>"; };
+		F1F55AF4EEE90F372A3F239E /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		F1FB857DBD851364F4D97950 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		10985484EF4916750718934E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EB13F7895BCB44C356F1AD0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C26142A95D63A4958DD506A /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				1BE7E857033311DD5DFC410A /* MedicationDetailView.swift */,
+				BDBF19982DCC18A175A8355C /* MedicationsListView.swift */,
+			);
+			path = Medications;
+			sourceTree = "<group>";
+		};
+		33BB0060DDE40D80F0F68CCD /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				EF3423F271E3332288A483B8 /* BarcodeScannerView.swift */,
+				4D96923B8B8B4DD93B73081C /* InventoryDetailView.swift */,
+				83E6D98632B1DCA650CA6296 /* InventoryListView.swift */,
+				4F293623D244DAC03D5B120A /* ScannedItemSheet.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		34A07C7C83A07B2AC7F01BC6 /* LifeTrackerWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				D656B52A208861CE5E49A6FB /* Info.plist */,
+				17CAF10332C81439DE435B40 /* LifeTrackerWidgets.entitlements */,
+				4ED25F3DA235BA18B3170CDD /* LifeTrackerWidgetsBundle.swift */,
+				4F06A7B6EE739D94A662C639 /* MedicationsWidget.swift */,
+				145270DED29F90CB102F2C90 /* WidgetDataLoader.swift */,
+				B02CE52ACD48752172F5A59F /* WorkoutsWidget.swift */,
+			);
+			path = LifeTrackerWidgets;
+			sourceTree = "<group>";
+		};
+		36248309732DDE57736CE0AF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9B0894CAC38846A1FF7E5B44 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3D34C7EEB3B24F5C123490FA /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				2F21976DD7D25FE6B111A733 /* DocumentDetailView.swift */,
+				B060B8C62BBDC264CEA4EF88 /* DocumentScannerView.swift */,
+				1F4244A1C80877100F3377F4 /* DocumentsListView.swift */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		3EE0AA2B04BE24ADB8D4FD8A /* LifeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				71531A5DE9BFF43B302F0F4D /* App */,
+				8B7A957687503B27664EE08A /* Core */,
+				880EFF22E3E1F152CD3750FD /* Features */,
+				10985484EF4916750718934E /* Resources */,
+				C3FF314A9770F7D4E2F97A48 /* Shared */,
+				43FDD8627EF20D77562C7277 /* LifeTracker.entitlements */,
+			);
+			path = LifeTracker;
+			sourceTree = "<group>";
+		};
+		5CFE2E043E9AC33DFEA7FAC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E172B4F279300F334F4576F /* BodyMeasurement.swift */,
+				7A7DA261C61A5BD4CA260D31 /* Document.swift */,
+				43C3F52F97A8B32F079582C9 /* Exercise.swift */,
+				94EFDBAABE757D4F01836066 /* Folder.swift */,
+				016404DA9E02936A689F1B9A /* InventoryItem.swift */,
+				A71411F051D8520F43D45134 /* Medication.swift */,
+				98802AC5DA89FD7DFCBF3773 /* MedicationLog.swift */,
+				BAEDD7F56DF84B139DDD219C /* Workout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E2CB6F36FA2E75C62C413CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC051DFAE2D8EEB49AFB59D /* LifeTracker.app */,
+				C1D41B0D0D162D2A3D40D885 /* LifeTrackerTests.xctest */,
+				38AD754FA410F3D71AE3D25E /* LifeTrackerUITests.xctest */,
+				BB256B310D054E382FF05243 /* LifeTrackerWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71531A5DE9BFF43B302F0F4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FCBEA256A59C8170565DD /* ContentView.swift */,
+				090152FB05D3E75A7896D0DE /* LifeTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7BC9ADB0F60B97E100783A0D /* LifeTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C41E23259503E85E363F084 /* BodyMeasurementTests.swift */,
+				C1658EADED6F94330E698BAA /* DocumentTests.swift */,
+				18EBA9FC169838CC418E1CBF /* InventoryItemTests.swift */,
+				86DB4BDFBE1AFBA6CEBE2B87 /* MedicationTests.swift */,
+				3D2171BBF85154A6B911B435 /* WorkoutTests.swift */,
+			);
+			path = LifeTrackerTests;
+			sourceTree = "<group>";
+		};
+		7E8A951A6499AC5EA5059890 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				26BF1C7802C3143FF9143A17 /* BarcodeLookupService.swift */,
+				F1FB857DBD851364F4D97950 /* CacheService.swift */,
+				81AF2F41F61F96C792E85FA2 /* HealthKitService.swift */,
+				4E466DABED1F45D890DD0DFD /* LoggingService.swift */,
+				7AFF912522FABA96EE094667 /* NetworkMonitor.swift */,
+				7F225F7265E5E20DEE80526F /* NotificationService.swift */,
+				D4D03B1BABB08B397F6CED99 /* SyncManager.swift */,
+				6A864976AF270F248217949F /* VisionService.swift */,
+				CA2BA64462D692DB27BFBF47 /* WidgetDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82B45C9CAC0F96765A8034DA = {
+			isa = PBXGroup;
+			children = (
+				3EE0AA2B04BE24ADB8D4FD8A /* LifeTracker */,
+				7BC9ADB0F60B97E100783A0D /* LifeTrackerTests */,
+				B4C8384FA336ED9680250695 /* LifeTrackerUITests */,
+				34A07C7C83A07B2AC7F01BC6 /* LifeTrackerWidgets */,
+				6E2CB6F36FA2E75C62C413CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		880EFF22E3E1F152CD3750FD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DF674E9DB6AB7D0CDC1757C3 /* Dashboard */,
+				3D34C7EEB3B24F5C123490FA /* Documents */,
+				C5F7365060CAE9E623723331 /* Health */,
+				33BB0060DDE40D80F0F68CCD /* Inventory */,
+				2C26142A95D63A4958DD506A /* Medications */,
+				36248309732DDE57736CE0AF /* Onboarding */,
+				F4C78DDCB7C2349AE41B09E8 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8B7A957687503B27664EE08A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D94FD5151EBCC5EA3BA588FB /* Extensions */,
+				5CFE2E043E9AC33DFEA7FAC1 /* Models */,
+				B3EFD7F06190EA226F493A25 /* Repositories */,
+				7E8A951A6499AC5EA5059890 /* Services */,
+				BABEF14E568792FDC242CFF6 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B3EFD7F06190EA226F493A25 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B4C8384FA336ED9680250695 /* LifeTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29812EE8674C23AABC01164F /* DocumentsUITests.swift */,
+				26CA8DAF994323D7163D198F /* HealthUITests.swift */,
+				2B85A413EB992DAF693A1533 /* InventoryUITests.swift */,
+				F13547969CDB4D1AEB754E1B /* LifeTrackerUITests.swift */,
+				5C73DDE4A3B36842870928EB /* MedicationsUITests.swift */,
+			);
+			path = LifeTrackerUITests;
+			sourceTree = "<group>";
+		};
+		B80D67CEA3A47F0F026C631A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0CF634C151D999EFA2AC9EC6 /* CardView.swift */,
+				2A29988F5A74AD2A020F3F3B /* EmptyStateView.swift */,
+				2D1D59E7048395993CD8C1AE /* QuickActionButton.swift */,
+				3AFA62525AB5473F2AD27C91 /* SectionHeader.swift */,
+				E653419365319590B1C51935 /* StatCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BABEF14E568792FDC242CFF6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F1F55AF4EEE90F372A3F239E /* AppError.swift */,
+				32829E71B59502B29B8A6822 /* Constants.swift */,
+				CE859F26DD576B197080DAAC /* ErrorHandling.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C3FF314A9770F7D4E2F97A48 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B80D67CEA3A47F0F026C631A /* Components */,
+				F855A090F7F6B556BC17BE90 /* Styles */,
+				1EB13F7895BCB44C356F1AD0 /* Utilities */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C5F7365060CAE9E623723331 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				23DD700340121A5B59B9749B /* AddMeasurementView.swift */,
+				CEEF4D9BA6D2EE1956E98E86 /* HealthView.swift */,
+				6A639B9F551EABB787A4BA6A /* WorkoutDetailView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		D94FD5151EBCC5EA3BA588FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0927B54A00E4B5A545C5A7A7 /* Date+Extensions.swift */,
+				7BBD188A6888F5DEA579FB66 /* String+Extensions.swift */,
+				5C6EBA5B20071C5CDDDAB4B7 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF674E9DB6AB7D0CDC1757C3 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A3530026B12E9251A98D3BD0 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F4C78DDCB7C2349AE41B09E8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				89D09C2A7D1E234D169AC6BE /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F855A090F7F6B556BC17BE90 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				01E35C5BE51D63A0103935C0 /* Theme.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74A1EB4C0AF2D9B1D688AB27 /* LifeTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE1D6781F4860ECF6D8D7100 /* Build configuration list for PBXNativeTarget "LifeTrackerTests" */;
+			buildPhases = (
+				1073581567AD5DDF535116AA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190A53B30ABC304F658EE1DC /* PBXTargetDependency */,
+			);
+			name = LifeTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = LifeTrackerTests;
+			productReference = C1D41B0D0D162D2A3D40D885 /* LifeTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C2F7F206D0464F21FA5ED08 /* LifeTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AC95AA81FEFE9D896D0BE6D /* Build configuration list for PBXNativeTarget "LifeTrackerUITests" */;
+			buildPhases = (
+				302FB043D428CD1FFCBC996B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E6991A76EA8F4A31AA98977 /* PBXTargetDependency */,
+			);
+			name = LifeTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = LifeTrackerUITests;
+			productReference = 38AD754FA410F3D71AE3D25E /* LifeTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		901800E80EBD41BF2A1A3740 /* LifeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F938C37BFE758C579E26E3C /* Build configuration list for PBXNativeTarget "LifeTracker" */;
+			buildPhases = (
+				DFB15E77DB80C8FA7E271235 /* Sources */,
+				BAD38D37A21983E76BBE0106 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BE14D38D7D79445CA54E10 /* PBXTargetDependency */,
+			);
+			name = LifeTracker;
+			packageProductDependencies = (
+			);
+			productName = LifeTracker;
+			productReference = AAC051DFAE2D8EEB49AFB59D /* LifeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B368A992992B04E39622D4AF /* LifeTrackerWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29CE63AB425DD438344AFBE /* Build configuration list for PBXNativeTarget "LifeTrackerWidgets" */;
+			buildPhases = (
+				9B2AC033ED62B6918B4FDC28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeTrackerWidgets;
+			packageProductDependencies = (
+			);
+			productName = LifeTrackerWidgets;
+			productReference = BB256B310D054E382FF05243 /* LifeTrackerWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		947D4850361F5D1D49B780EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8C2F7F206D0464F21FA5ED08 = {
+						TestTargetID = 901800E80EBD41BF2A1A3740;
+					};
+					901800E80EBD41BF2A1A3740 = {
+						ProvisioningStyle = Automatic;
+					};
+					B368A992992B04E39622D4AF = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B459067F2EC4E05FD8108DB2 /* Build configuration list for PBXProject "LifeTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 82B45C9CAC0F96765A8034DA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				901800E80EBD41BF2A1A3740 /* LifeTracker */,
+				74A1EB4C0AF2D9B1D688AB27 /* LifeTrackerTests */,
+				8C2F7F206D0464F21FA5ED08 /* LifeTrackerUITests */,
+				B368A992992B04E39622D4AF /* LifeTrackerWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1073581567AD5DDF535116AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8556EE5F21E1E74CCDE1036D /* BodyMeasurementTests.swift in Sources */,
+				6889327A1D9E1773252D6118 /* DocumentTests.swift in Sources */,
+				AC971F34F8B82F379745AF89 /* InventoryItemTests.swift in Sources */,
+				9F06F6280AE5DE4B554BDD37 /* MedicationTests.swift in Sources */,
+				7E1A835DAA81342019109750 /* WorkoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FB043D428CD1FFCBC996B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621AB16ED063427E42C04FA2 /* DocumentsUITests.swift in Sources */,
+				FE02E0D2FB9A90DC688942F3 /* HealthUITests.swift in Sources */,
+				8122719CAD4F285067AC1C0D /* InventoryUITests.swift in Sources */,
+				130D549B093688F4D8662A70 /* LifeTrackerUITests.swift in Sources */,
+				1331F7E54CFF71EFB9F66000 /* MedicationsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B2AC033ED62B6918B4FDC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AE77D134900E07DCE76EF9 /* LifeTrackerWidgetsBundle.swift in Sources */,
+				95F513BD28E7851627EFA286 /* MedicationsWidget.swift in Sources */,
+				25B2A09D8ACAA2B4E9555137 /* WidgetDataLoader.swift in Sources */,
+				D7D8C38F6DE18C38C546B2C5 /* WorkoutsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB15E77DB80C8FA7E271235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81472AF8DE9C84AF84D998F5 /* AddMeasurementView.swift in Sources */,
+				0D9250256D81A143EAB86AE7 /* AppError.swift in Sources */,
+				1A7DBC068287ED8DD3998A63 /* BarcodeLookupService.swift in Sources */,
+				EA27E650A54FC679EE9E34C5 /* BarcodeScannerView.swift in Sources */,
+				EC195E8519AC841094E34382 /* BodyMeasurement.swift in Sources */,
+				07EA71FDDAF93AF96EA1FE72 /* CacheService.swift in Sources */,
+				F3F79B8E1F916BF894C84B46 /* CardView.swift in Sources */,
+				017E0346256A0EDE2565626A /* Constants.swift in Sources */,
+				634EF54CA3316048DA0F0149 /* ContentView.swift in Sources */,
+				7E8299727E4C91419C35ADF2 /* DashboardView.swift in Sources */,
+				4EA9A932D8566002193F059B /* Date+Extensions.swift in Sources */,
+				36734B507B383170B54AA610 /* Document.swift in Sources */,
+				BD5AF9035689F0754D24A5C9 /* DocumentDetailView.swift in Sources */,
+				2E44B347D4234D91CCBC6F67 /* DocumentScannerView.swift in Sources */,
+				EC6FEBC6BC5D9974992B58E0 /* DocumentsListView.swift in Sources */,
+				E6A7B3240EA23F5B7E1C1634 /* EmptyStateView.swift in Sources */,
+				E9565CA196C31BE6F28AFCE2 /* ErrorHandling.swift in Sources */,
+				15EB95E76643FEE169E1A79C /* Exercise.swift in Sources */,
+				332523EC11000F623C0D07F7 /* Folder.swift in Sources */,
+				A2E3303847F0973A3B9FFC24 /* HealthKitService.swift in Sources */,
+				FE2FCA067DEF4BB461391E17 /* HealthView.swift in Sources */,
+				B2FA417C7A129BA04ADE9DA4 /* InventoryDetailView.swift in Sources */,
+				B36C58F5CAF4E4F8BEE8FACA /* InventoryItem.swift in Sources */,
+				31DF3E386F4EBBB6D2FE774B /* InventoryListView.swift in Sources */,
+				AA9C4FA8AAD4A04658FAA63E /* LifeTrackerApp.swift in Sources */,
+				368ED662290E5844129114FB /* LoggingService.swift in Sources */,
+				56F61A578CB78A8D9F93781A /* Medication.swift in Sources */,
+				E0ED1C0FB573056B0415A3F7 /* MedicationDetailView.swift in Sources */,
+				9E534FA4668F6266950B0873 /* MedicationLog.swift in Sources */,
+				AD135CC66CE08AE67AD3BDF4 /* MedicationsListView.swift in Sources */,
+				B5D5BACEAE64264326FD21CC /* NetworkMonitor.swift in Sources */,
+				1C75E78F3561ABF95956779D /* NotificationService.swift in Sources */,
+				E46461476D298A0EBCB56C0F /* OnboardingView.swift in Sources */,
+				BAA9A2E3F126B5191883C434 /* QuickActionButton.swift in Sources */,
+				FB65EE5ACBCCFBF43B47FD86 /* ScannedItemSheet.swift in Sources */,
+				FA0952A7F0D70766BD15BB03 /* SectionHeader.swift in Sources */,
+				F2782DFC213BE85AFD4D138B /* SettingsView.swift in Sources */,
+				4D58EC2EBFBC9FC7BFBCC91F /* StatCard.swift in Sources */,
+				BE431A83632ACCD61CCE05A3 /* String+Extensions.swift in Sources */,
+				8974358C4D91C3886BA4A9F5 /* SyncManager.swift in Sources */,
+				073C202784F1F1FDCF528830 /* Theme.swift in Sources */,
+				25B8EF705495E685F745C7B7 /* View+Extensions.swift in Sources */,
+				36D9F0382A9335297611F8BC /* VisionService.swift in Sources */,
+				C3AAEB14DCA6994B88FE1973 /* WidgetDataService.swift in Sources */,
+				5C453286AB7D0F33287E172A /* Workout.swift in Sources */,
+				2006075983C79A6B5D13BA6B /* WorkoutDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		190A53B30ABC304F658EE1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901800E80EBD41BF2A1A3740 /* LifeTracker */;
+			targetProxy = A93B6806F37198E9D11AA719 /* PBXContainerItemProxy */;
+		};
+		4E6991A76EA8F4A31AA98977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901800E80EBD41BF2A1A3740 /* LifeTracker */;
+			targetProxy = C38FCEDE6921A9EF3402B08E /* PBXContainerItemProxy */;
+		};
+		C6BE14D38D7D79445CA54E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B368A992992B04E39622D4AF /* LifeTrackerWidgets */;
+			targetProxy = 6CC82D200CB570B9E9E0E73B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C71B8B0EDCCEA45B3DE35B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LifeTrackerWidgets/LifeTrackerWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = LifeTrackerWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.app.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D68E4933D73D396068F73DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeTracker;
+			};
+			name = Debug;
+		};
+		35CA3928803ED498DC304847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeTracker/LifeTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeTracker;
+				INFOPLIST_KEY_NSCameraUsageDescription = "LifeTracker needs camera access to scan documents and barcodes";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "LifeTracker reads health data to display your fitness metrics";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "LifeTracker writes workout and measurement data to Health";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "LifeTracker needs photo library access to save and import images";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44EF2B5AFF8E9271E35C3623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LifeTrackerWidgets/LifeTrackerWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = LifeTrackerWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.app.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8BA01F4FDF3AB82CCA6DB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2998468720413C953DF3EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LifeTracker;
+			};
+			name = Release;
+		};
+		E2AC177572E77B7946D8C258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LifeTracker/LifeTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeTracker;
+				INFOPLIST_KEY_NSCameraUsageDescription = "LifeTracker needs camera access to scan documents and barcodes";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "LifeTracker reads health data to display your fitness metrics";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "LifeTracker writes workout and measurement data to Health";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "LifeTracker needs photo library access to save and import images";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4853B6531F5A435F8E01436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeTracker";
+			};
+			name = Release;
+		};
+		E930279A51FA31FF5F95586F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9A2A90FA0CE1C221961A4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifetracker.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LifeTracker";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AC95AA81FEFE9D896D0BE6D /* Build configuration list for PBXNativeTarget "LifeTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D68E4933D73D396068F73DA /* Debug */,
+				D2998468720413C953DF3EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F938C37BFE758C579E26E3C /* Build configuration list for PBXNativeTarget "LifeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AC177572E77B7946D8C258 /* Debug */,
+				35CA3928803ED498DC304847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B459067F2EC4E05FD8108DB2 /* Build configuration list for PBXProject "LifeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8BA01F4FDF3AB82CCA6DB70 /* Debug */,
+				E930279A51FA31FF5F95586F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F29CE63AB425DD438344AFBE /* Build configuration list for PBXNativeTarget "LifeTrackerWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44EF2B5AFF8E9271E35C3623 /* Debug */,
+				1C71B8B0EDCCEA45B3DE35B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE1D6781F4860ECF6D8D7100 /* Build configuration list for PBXNativeTarget "LifeTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A2A90FA0CE1C221961A4F5 /* Debug */,
+				E4853B6531F5A435F8E01436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 947D4850361F5D1D49B780EA /* Project object */;
+}

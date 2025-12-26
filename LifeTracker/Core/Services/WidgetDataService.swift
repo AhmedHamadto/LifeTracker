@@ -222,17 +222,3 @@ actor WidgetDataService {
     }
 }
 
-// MARK: - Widget Type Extension
-
-extension WorkoutType {
-    var color: String {
-        switch self {
-        case .strength: return "red"
-        case .cardio: return "green"
-        case .hiit: return "orange"
-        case .flexibility: return "purple"
-        case .sports: return "blue"
-        case .other: return "gray"
-        }
-    }
-}

@@ -70,6 +70,12 @@ extension Date {
         }
     }
 
+    var relativeDescription: String {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.unitsStyle = .abbreviated
+        return formatter.localizedString(for: self, relativeTo: Date())
+    }
+
     func adding(days: Int) -> Date {
         Calendar.current.date(byAdding: .day, value: days, to: self) ?? self
     }
