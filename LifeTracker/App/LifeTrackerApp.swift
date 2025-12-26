@@ -32,10 +32,12 @@ struct LifeTrackerApp: App {
                     cloudKitDatabase: .none
                 )
             } else {
+                // TODO: Re-enable CloudKit after making all model attributes optional or adding defaults
+                // CloudKit requires all attributes to be optional or have default values
                 modelConfiguration = ModelConfiguration(
                     schema: schema,
                     isStoredInMemoryOnly: false,
-                    cloudKitDatabase: .automatic
+                    cloudKitDatabase: .none
                 )
             }
 
