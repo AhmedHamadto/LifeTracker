@@ -107,7 +107,7 @@
 - [ ] Optimize CloudKit sync performance
 
 ## Known Issues
-- None yet (new project)
+- CloudKit sync temporarily disabled - models need to be updated with optional attributes or default values for CloudKit compatibility
 
 ---
 
